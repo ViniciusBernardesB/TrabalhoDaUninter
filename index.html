@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ajuda Financeira</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!--- Div Da Página Inteira -->
+    <div class="centralizarTelas">
+
+        <!--- Div Aba Nome Do Aulo -->
+        <div class="nomeDoAulo" id="abaNomeDoAulo">
+            <label class="titulo-Nome">Nome</label>
+            <input type="text" id="nome" class="input-Nome">
+            <button class="btn-Nome" onclick="Salvar()">Salvar</button>
+        </div>
+
+        <!--- Div Da Primeira Aba -->
+        <div class="PrimeiraAba" id="PrimeiraAba">
+            <h1 class="TituloPrimeiraAba" id="TituloPrimeiraAba"></h1>
+            <p class="FrasePrimeiraAba">Vamos Ajudar Você A Organizar Sua Vida Financeira!</p>
+            <h2 class="FraseComeçarPrimeiraAba">Vamos Começar?</h2>
+            <button class="btn-Começar" onclick="Começar()">Começar</button>
+        </div>
+
+
+        <!--- Div Da Segunda Aba -->
+        <div class="SegundaAba" id="SegundaAba">
+            <h1 class="TituloDespesasMês">Despesas Mês</h1>
+            <label>Salario:</label>
+            <input type="number" id="Salario">
+            <label>Supermecado:</label>
+            <input type="number" id="Supermecado">
+            <label>Conta De Luz</label>
+            <input type="number" id="Luz">
+            <label>Conta De Agua</label>
+            <input type="number" id="Agua">
+            <label>Conta De Internet</label>
+            <input type="number" id="Internet">
+            <label>Conta De Internet/Celular</label>
+            <input type="number" id="Internet/Celular">
+            <label>Aluguel? ou Prestação Do Imovel?</label>
+            <p class="frase">Caso Possuir Casa Propria, Não precissa Preencher o campo</p>
+            <input type="number" id="Aluguel">
+            <label>Fatura De Cartão De Credito?</label>
+            <p class="frase">Caso Não Possuir Cartão De Credito ou Não Possuir Fatura em aberta, Não precissa Preencher o campo</p>
+            <input type="number" id="Credito">
+            <button class="btn-Calcular" onclick="Calcular()">Calcular</button>
+        </div>
+
+        <!--- Div Do Resumo Do Calculo -->
+        <div class="Resumo" id="Resumo">
+            <h1 class="TituloResumo">Resulmo Do Calculo</h1>
+            <p class="sobra" id="sobra"></p>
+            <p class="Investir" id="Investir"></p>
+            <p class="lazer" id="lazer"></p>
+            <p>Dica Você pode investir seu dinheri em reda fixa ou rede variavel:</p>
+            <p>Renda Variavel: Em linhas gerais, investimentos de renda variável são aqueles cujo retorno é imprevisível no momento do investimento.</p>
+            <p>Renda Fixa: Investimentos de Renda Fixa são investimentos em que é possível conhecer ou prever a rentabilidade final. </p>
+            <button class="btn-Resulmo" onclick="CalcularNovamente()">Calcular Novamenta?</button>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+    <script src="main.js"></script>
+</body>
+</html>
